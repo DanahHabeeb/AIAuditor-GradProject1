@@ -79,7 +79,6 @@
     <Content Include="project\static\project\js\popper.min.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="project\templates\project\about.html" />
     <Content Include="project\templates\project\base.html">
       <SubType>Code</SubType>
       <Publish>True</Publish>

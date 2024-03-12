@@ -303,11 +303,3 @@ header::after {
         font-weight: 600
     }
 }
-
-
-/* Start Post content */
-.post{
-    border: 1px solid #CCC;
-}
-
-/* End Post content */
