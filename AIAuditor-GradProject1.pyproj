@@ -68,6 +68,7 @@
     <Content Include="project\static\project\fonts\Tajawal-Light.ttf" />
     <Content Include="project\static\project\fonts\Tajawal-Medium.ttf" />
     <Content Include="project\static\project\fonts\Tajawal-Regular.ttf" />
+    <Content Include="project\static\project\images\report.png" />
     <Content Include="project\static\project\images\robot.png" />
     <Content Include="project\static\project\js\fontawesome-all.min.js" />
     <Content Include="project\static\project\js\bootstrap.min.js">
@@ -79,6 +80,7 @@
     <Content Include="project\static\project\js\popper.min.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="project\templates\project\about.html" />
     <Content Include="project\templates\project\base.html">
       <SubType>Code</SubType>
       <Publish>True</Publish>
