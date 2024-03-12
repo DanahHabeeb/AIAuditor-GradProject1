@@ -3,6 +3,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>AIAuditor-GradProject1</Name>
     <RootNamespace>AIAuditor-GradProject1</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -34,12 +35,74 @@
     <Compile Include="AIAuditor_GradProject1\settings.py" />
     <Compile Include="AIAuditor_GradProject1\urls.py" />
     <Compile Include="AIAuditor_GradProject1\wsgi.py" />
+    <Compile Include="project\admin.py" />
+    <Compile Include="project\apps.py" />
+    <Compile Include="project\migrations\__init__.py" />
+    <Compile Include="project\models.py" />
+    <Compile Include="project\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="project\tests.py" />
+    <Compile Include="project\views.py" />
+    <Compile Include="project\__init__.py" />
+    <Compile Include="user\admin.py" />
+    <Compile Include="user\apps.py" />
+    <Compile Include="user\migrations\__init__.py" />
+    <Compile Include="user\models.py" />
+    <Compile Include="user\tests.py" />
+    <Compile Include="user\views.py" />
+    <Compile Include="user\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="project\static\project\css\bootstrap.min.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="project\static\project\css\main.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="project\static\project\fonts\OFL.txt" />
+    <Content Include="project\static\project\fonts\Tajawal-Black.ttf" />
+    <Content Include="project\static\project\fonts\Tajawal-Bold.ttf" />
+    <Content Include="project\static\project\fonts\Tajawal-ExtraBold.ttf" />
+    <Content Include="project\static\project\fonts\Tajawal-ExtraLight.ttf" />
+    <Content Include="project\static\project\fonts\Tajawal-Light.ttf" />
+    <Content Include="project\static\project\fonts\Tajawal-Medium.ttf" />
+    <Content Include="project\static\project\fonts\Tajawal-Regular.ttf" />
+    <Content Include="project\static\project\images\robot.png" />
+    <Content Include="project\static\project\js\fontawesome-all.min.js" />
+    <Content Include="project\static\project\js\bootstrap.min.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="project\static\project\js\jquery-3.3.1.slim.min.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="project\static\project\js\popper.min.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="project\templates\project\base.html">
+      <SubType>Code</SubType>
+      <Publish>True</Publish>
+    </Content>
+    <Content Include="project\templates\project\index.html" />
     <Content Include="requirements.txt" />
+    <Content Include="user\templates\user\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AIAuditor_GradProject1\" />
+    <Folder Include="project\" />
+    <Folder Include="project\migrations\" />
+    <Folder Include="project\static\" />
+    <Folder Include="project\static\project\css\" />
+    <Folder Include="project\static\project\fonts\" />
+    <Folder Include="project\static\project\images\" />
+    <Folder Include="project\static\project\js\" />
+    <Folder Include="project\static\project\" />
+    <Folder Include="project\templates\" />
+    <Folder Include="project\templates\project\" />
+    <Folder Include="user\" />
+    <Folder Include="user\migrations\" />
+    <Folder Include="user\templates\" />
+    <Folder Include="user\templates\user\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
