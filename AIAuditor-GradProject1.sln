@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AIAuditor-GradProject1", "AIAuditor-GradProject1.pyproj", "{7B27685F-2E02-45CB-B343-3AA8C3951975}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AIAuditor-GradProject1", "..\..\..\Desktop\AIAuditor-GradProject1.pyproj", "{7B27685F-2E02-45CB-B343-3AA8C3951975}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
