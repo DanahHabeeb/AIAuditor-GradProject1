@@ -37,9 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'project.apps.projectConfig',
-    'user.apps.userConfig',
-
 ]
 
 # Middleware framework
@@ -61,7 +58,7 @@ ROOT_URLCONF = 'AIAuditor_GradProject1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,9 +111,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
-
-#To make static folder apply to the  enire project
-STATICFILES_DIERS = [
-   os.path.join(BASE_DIR, "static"),
-   'C:/Users/ACSW10-03032024K/source/repos/AIAuditor-GradProject1/project/static/',
-    ]

@@ -6,6 +6,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% if title %}
+    <title> AIAuditor | {{title}} </title>
+    {% else  %}
+    <title> AIAuditor </title>
+    {% endif %}
+
     <link rel="stylesheet" href="{% static 'project/css/main.css' %}">
     <link rel="stylesheet" href="{% static 'project/css/bootstrap.min.css' %}">
     <link rel="shortcut icon" href="{% static 'project/images/robot.png' %}">
@@ -25,10 +32,11 @@
             <nav>
                 <img class="logo" src="{% static 'project/images/robot.png' %}" alt="شعار ">
                 <ul id="navbar1">
-                    <li><a href="#"> <i class="fa-solid fa-house"></i> الرئيسية</a> </li>
+                    <li><a href="{% url 'home' %}"> <i class="fa-solid fa-house"></i> الرئيسية</a> </li>
                     <li><a href="#"> <i class="fa-solid fa-clipboard-list"></i>الخدمات</a></li>
                     <li><a href="#"> <i class="fa-solid fa-circle-question"></i> FQ&A</a></li>
                     <li><a href="#"> <i class="fa-solid fa-comments"></i> تواصل معنا</a></li>
+                    <li><a href="{% url 'about' %}"> <i class="fa-solid fa-person-circle-question"></i> من نحن</a></li>
                 </ul>
 
                 <ul id="navbar2">
